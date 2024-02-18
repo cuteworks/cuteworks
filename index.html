@@ -1,35 +1,102 @@
-<!doctype html>
-<html>
+<!doctype HTML>
+<html lang="en">
 <head>
-	<title>cuteworks</title>
-	<style>
-	a, a:visited, a:hover, a:active {
-		color: #cc0099;
-	}
-	h1 {
-		color: #0099cc;
-	}
-	h2 {
-		color: #0099cc;
-	}
-	p {
-		color: #111111;
-		font-size: 1.25em;
-	}
-	</style>
+<meta charset="UTF-8" />
+
+<link href="https://fonts.googleapis.com/css?family=Heebo:800|Trocchi" rel="stylesheet">
+
+
+<title>cuteworks</title>
+
+
+<style>
+body {
+  font-size: 14pt;
+  background-color: #f6f6f6;
+  font-family: 'Trocchi', serif;
+  color: #444;
+}
+
+#spotlight {
+  background: radial-gradient(#fff, #f6f6f6);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#centerbox {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.chibis, #links {
+  text-align: center;
+}
+
+.chibis img {
+  width: 10rem;
+  height: 10rem;
+  margin-right: -4rem;
+
+  position: relative;
+  left: -2rem;
+}
+
+@media(max-width: 600px) {
+  .chibis img {
+    width: 6rem;
+    height: 6rem;
+    margin-right: -0.5rem;
+    left: -0.25rem;
+  }
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #555;
+}
+
+#links {
+  font-size:0.8rem;
+  color: #555;
+}
+
+a:hover {
+  color: #888;
+}
+
+h1, h2 { 
+  font-family: 'Heebo', sans-serif;
+  color: #182b3a;
+  margin-top: -1.5rem;
+  letter-spacing: -1px;
+}
+
+.logo {
+  width: 128px;
+}
+
+</style>
+
 </head>
 <body>
-	<div style="width: 50vw; margin-left: auto; margin-right: auto;">
-	
-		<img src="img/cuteworks.png" alt="cuteworks" 
-			style="margin-left: auto; margin-right: auto; display: block;" />
-		<hr />
-		<p>
-			<img src="http://i.imgur.com/xy6tM.gif" alt="placeholder pandas"
-					style="margin-left: auto; margin-right: auto; display: block; 
-							border: 16px solid #111;" />
-		</p>
-	</div>
+
+  <div id="spotlight">
+    <div id="centerbox">
+      <img src="img/logo.png" class="logo" />
+      <h1>cuteworks</h1>
+    </div>
+    <div class="chibis">
+	<p>
+		custom software and design
+	</p>
+    </div>
+    <div id="links">
+      &copy; 2024 cuteworks, LLC 
+    </div>
+  </div>
 </body>
 </html>
-
